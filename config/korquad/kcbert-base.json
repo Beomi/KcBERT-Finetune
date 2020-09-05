@@ -7,7 +7,7 @@
   "threads": 4,
   "version_2_with_negative": false,
   "null_score_diff_threshold": 0.0,
-  "max_seq_length": 512,
+  "max_seq_length": 300,
   "doc_stride": 128,
   "max_query_length": 64,
   "max_answer_length": 30,
