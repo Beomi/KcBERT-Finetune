@@ -52,9 +52,6 @@ $ python3 run_squad.py --task korquad --config_file kcbert-base.json
 
 \***config의 세팅을 그대로 하여 돌린 결과이며, hyperparameter tuning을 추가적으로 할 시 더 좋은 성능이 나올 수 있습니다.**
 
-- `KoELECTRA-Base`의 경우 `KoBERT`보다 좋은 성능을 보이며, `HanBERT`와 일부 Task에서 유사한 성능을 보입니다.
-- `KoELECTRA-Small`의 경우 전반적으로 `DistilKoBERT`보다 좋은 성능을 보입니다.
-
 ## Reference
 
 - [Transformers Examples](https://github.com/huggingface/transformers/blob/master/examples/README.md)
@@ -67,3 +64,4 @@ $ python3 run_squad.py --task korquad --config_file kcbert-base.json
 - [KoBERT](https://github.com/SKTBrain/KoBERT)
 - [HanBERT](https://github.com/tbai2019/HanBert-54k-N)
 - [HanBert Transformers](https://github.com/monologg/HanBert-Transformers)
+- [KoELECTRA](https://github.com/monologg/KoELECTRA)
