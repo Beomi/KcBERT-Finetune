@@ -8,8 +8,8 @@
 ## Requirements
 
 ```python
-torch~=1.6.0
-transformers~=3.0.2
+torch<=1.8
+transformers<=4
 seqeval
 fastprogress
 attrdict
