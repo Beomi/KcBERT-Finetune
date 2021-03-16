@@ -21,6 +21,8 @@ attrdict
 $ python3 run_seq_cls.py --task {$TASK_NAME} --config_file {$CONFIG_FILE}
 ```
 
+### KcBERT
+
 ```bash
 # Base: kcbert-base.json / Large: kcbert-large.json
 $ python3 run_seq_cls.py --task nsmc --config_file kcbert-base.json
@@ -30,6 +32,31 @@ $ python3 run_seq_cls.py --task question-pair --config_file kcbert-base.json
 $ python3 run_seq_cls.py --task korsts --config_file kcbert-base.json
 $ python3 run_ner.py --task naver-ner --config_file kcbert-base.json
 $ python3 run_squad.py --task korquad --config_file kcbert-base.json
+```
+
+### KcELECTRA
+
+```bash
+source venv/bin/activate
+CUDA_VISIBLE_DEVICES=0 python3 run_squad.py --task korquad --config_file kcelectra-base-v1.json
+CUDA_VISIBLE_DEVICES=1 python3 run_ner.py --task naver-ner --config_file kcelectra-base-v1.json
+CUDA_VISIBLE_DEVICES=2 python3 run_seq_cls.py --task korsts --config_file kcelectra-base-v1.json
+CUDA_VISIBLE_DEVICES=3 python3 run_seq_cls.py --task question-pair --config_file kcelectra-base-v1.json
+---
+CUDA_VISIBLE_DEVICES=2 python3 run_seq_cls.py --task paws --config_file kcelectra-base-v1.json
+CUDA_VISIBLE_DEVICES=3 python3 run_seq_cls.py --task kornli --config_file kcelectra-base-v1.json
+CUDA_VISIBLE_DEVICES=2 python3 run_seq_cls.py --task nsmc --config_file kcelectra-base-v1.json
+```
+
+```bash
+# Base: kcelectra-base.json
+$ python3 run_seq_cls.py --task nsmc --config_file kcelectra-base-v1.json
+$ python3 run_seq_cls.py --task kornli --config_file kcelectra-base-v1.json
+$ python3 run_seq_cls.py --task paws --config_file kcelectra-base-v1.json
+$ python3 run_seq_cls.py --task question-pair --config_file kcelectra-base-v1.json
+$ python3 run_seq_cls.py --task korsts --config_file kcelectra-base-v1.json
+$ python3 run_ner.py --task naver-ner --config_file kcelectra-base-v1.json
+$ python3 run_squad.py --task korquad --config_file kcelectra-base-v1.json
 ```
 
 ## Result
