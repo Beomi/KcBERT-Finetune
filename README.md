@@ -36,17 +36,7 @@ $ python3 run_squad.py --task korquad --config_file kcbert-base.json
 
 ### KcELECTRA
 
-```bash
-source venv/bin/activate
-CUDA_VISIBLE_DEVICES=0 python3 run_squad.py --task korquad --config_file kcelectra-base-v1.json
-CUDA_VISIBLE_DEVICES=1 python3 run_ner.py --task naver-ner --config_file kcelectra-base-v1.json
-CUDA_VISIBLE_DEVICES=2 python3 run_seq_cls.py --task korsts --config_file kcelectra-base-v1.json
-CUDA_VISIBLE_DEVICES=3 python3 run_seq_cls.py --task question-pair --config_file kcelectra-base-v1.json
----
-CUDA_VISIBLE_DEVICES=2 python3 run_seq_cls.py --task paws --config_file kcelectra-base-v1.json
-CUDA_VISIBLE_DEVICES=3 python3 run_seq_cls.py --task kornli --config_file kcelectra-base-v1.json
-CUDA_VISIBLE_DEVICES=2 python3 run_seq_cls.py --task nsmc --config_file kcelectra-base-v1.json
-```
+#### Base Command
 
 ```bash
 # Base: kcelectra-base.json
