@@ -62,6 +62,7 @@ $ python3 run_seq_cls.py --task paws --config_file exkcbert-paws.json
 # $ python3 run_seq_cls.py --task korsts --config_file exkcbert-paws.json
 # $ python3 run_ner.py --task naver-ner --config_file exkcbert-paws.json
 $ python3 run_squad.py --task korquad --config_file exkcbert-paws.json
+```
 
 ## Result
 
@@ -69,6 +70,8 @@ $ python3 run_squad.py --task korquad --config_file exkcbert-paws.json
 
 |                       | Size  | **NSMC**<br/>(acc) | **Naver NER**<br/>(F1) | **PAWS**<br/>(acc) | **KorNLI**<br/>(acc) | **KorSTS**<br/>(spearman) | **Question Pair**<br/>(acc) | **KorQuaD (Dev)**<br/>(EM/F1) |
 | :-------------------- | :---: | :----------------: | :--------------------: | :----------------: | :------------------: | :-----------------------: | :-------------------------: | :---------------------------: |
+| exKcBERT-paws |      641M       |     n/a     |         n/a          |       TODO        |        n/a         |           n/a           |          n/a          |         TODO         |
+| KcELECTRA-base |      475M       |     **91.71**      |         86.90          |       74.80        |        81.65         |           82.65           |          **95.78**          |         70.60 / 90.11         |
 | KcBERT-Base                | 417M  |       89.62        |         84.34          |       66.95        |        74.85         |           75.57           |            93.93            |         60.25 / 84.39         |
 | KcBERT-Large                | 1.2G  |       **90.68**        |         85.53          |       70.15        |        76.99         |           77.49           |            94.06            |         62.16 / 86.64          |
 | KoBERT                | 351M  |       89.63        |         86.11          |       80.65        |        79.00         |           79.64           |            93.93            |         52.81 / 80.27         |
