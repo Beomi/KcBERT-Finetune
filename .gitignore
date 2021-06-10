@@ -1,3 +1,5 @@
+exbert-transformers/
+.vscode/
 *.bin
 data/cached_*
 # Created by https://www.toptal.com/developers/gitignore/api/python
