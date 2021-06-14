@@ -27,7 +27,9 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 from torch.utils.data.distributed import DistributedSampler
-from fastprogress.fastprogress import master_bar, progress_bar
+# from fastprogress.fastprogress import master_bar, progress_bar
+from fastprogress import force_console_behavior
+master_bar,progress_bar = force_console_behavior()
 from attrdict import AttrDict
 
 from src import (
