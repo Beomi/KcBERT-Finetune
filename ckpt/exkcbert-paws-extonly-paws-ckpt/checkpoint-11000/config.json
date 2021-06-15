@@ -1,0 +1,39 @@
+{
+  "_name_or_path": "beomi/exKcBERT-paws-extonly",
+  "architectures": [
+    "exBertForSequenceClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "base_model": "",
+  "bos_token_id": 0,
+  "eos_token_id": 2,
+  "ex_hidden_size": 252,
+  "ex_intermediate_size": 1024,
+  "ex_num_attention_heads": 12,
+  "ex_num_hidden_layers": 12,
+  "ex_vocab_size": 20135,
+  "freeze_base_model": true,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "0",
+    "1": "1"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "label2id": {
+    "0": 0,
+    "1": 1
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 300,
+  "model_type": "exbert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 1,
+  "transformers_version": "4.7.0.dev0",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 50135
+}

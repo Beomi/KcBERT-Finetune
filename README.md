@@ -64,6 +64,63 @@ $ python3 run_seq_cls.py --task paws --config_file exkcbert-paws.json
 $ python3 run_squad.py --task korquad --config_file exkcbert-paws.json
 ```
 
+### exKcBERT-paws-extonly
+
+#### Command
+
+```bash
+# Base: exkcbert-paws-extonly.json
+$ python3 run_seq_cls.py --task nsmc --config_file exkcbert-paws-extonly.json
+$ python3 run_seq_cls.py --task kornli --config_file exkcbert-paws-extonly.json
+$ python3 run_seq_cls.py --task paws --config_file exkcbert-paws-extonly.json
+$ python3 run_seq_cls.py --task question-pair --config_file exkcbert-paws-extonly.json
+$ python3 run_seq_cls.py --task korsts --config_file exkcbert-paws-extonly.json
+$ python3 run_ner.py --task naver-ner --config_file exkcbert-paws-extonly.json
+$ python3 run_squad.py --task korquad --config_file exkcbert-paws-extonly.json
+```
+
+### exKcBERT-paws-extonly
+
+#### Command
+
+```bash
+# Base: exkcbert-paws-extonly.json
+$ python3 run_seq_cls.py --task nsmc --config_file exkcbert-paws-extonly.json
+$ python3 run_seq_cls.py --task kornli --config_file exkcbert-paws-extonly.json
+$ python3 run_seq_cls.py --task paws --config_file exkcbert-paws-extonly.json
+$ python3 run_seq_cls.py --task question-pair --config_file exkcbert-paws-extonly.json
+$ python3 run_seq_cls.py --task korsts --config_file exkcbert-paws-extonly.json
+$ python3 run_ner.py --task naver-ner --config_file exkcbert-paws-extonly.json
+$ python3 run_squad.py --task korquad --config_file exkcbert-paws-extonly.json
+```
+
+### exKcBERT-kowiki-extonly
+
+#### Command
+
+```bash
+# Base: exkcbert-paws-extonly.json
+$ python3 run_seq_cls.py --task nsmc --config_file exkcbert-kowiki.json
+$ python3 run_seq_cls.py --task kornli --config_file exkcbert-kowiki.json
+$ python3 run_seq_cls.py --task paws --config_file exkcbert-kowiki.json
+$ python3 run_seq_cls.py --task question-pair --config_file exkcbert-kowiki.json
+$ python3 run_seq_cls.py --task korsts --config_file exkcbert-kowiki.json
+$ python3 run_ner.py --task naver-ner --config_file exkcbert-kowiki.json
+$ python3 run_squad.py --task korquad --config_file exkcbert-kowiki.json
+```
+
+```
+# once
+python3 run_seq_cls.py --task nsmc --config_file exkcbert-kowiki.json && \
+python3 run_seq_cls.py --task kornli --config_file exkcbert-kowiki.json && \
+python3 run_seq_cls.py --task paws --config_file exkcbert-kowiki.json && \
+python3 run_seq_cls.py --task question-pair --config_file exkcbert-kowiki.json && \
+python3 run_seq_cls.py --task korsts --config_file exkcbert-kowiki.json && \
+python3 run_ner.py --task naver-ner --config_file exkcbert-kowiki.json && \
+python3 run_squad.py --task korquad --config_file exkcbert-kowiki.json 
+
+
+
 ## Result
 
 ### Base Model
