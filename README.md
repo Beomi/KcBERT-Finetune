@@ -7,9 +7,12 @@
 
 ## Requirements
 
+- python 3.9
+- pip reqs
+
 ```python
-torch<=1.8
-transformers<=4
+torch<=1.10
+transformers<5
 seqeval
 fastprogress
 attrdict
@@ -33,6 +36,22 @@ $ python3 run_seq_cls.py --task korsts --config_file kcbert-base.json
 $ python3 run_ner.py --task naver-ner --config_file kcbert-base.json
 $ python3 run_squad.py --task korquad --config_file kcbert-base.json
 ```
+
+
+### KcBERT-v2022
+
+```bash
+# run_all => bash run_all_kcbert_v2022.sh
+
+python3 run_seq_cls.py --task nsmc --config_file kcbert-base-v2022.json
+python3 run_seq_cls.py --task kornli --config_file kcbert-base-v2022.json
+python3 run_seq_cls.py --task paws --config_file kcbert-base-v2022.json
+python3 run_seq_cls.py --task question-pair --config_file kcbert-base-v2022.json
+python3 run_seq_cls.py --task korsts --config_file kcbert-base-v2022.json
+python3 run_ner.py --task naver-ner --config_file kcbert-base-v2022.json
+python3 run_squad.py --task korquad --config_file kcbert-base-v2022.json
+```
+
 
 ### KcELECTRA
 

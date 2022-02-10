@@ -17,30 +17,30 @@ from transformers import (
     DistilBertConfig,
     ElectraConfig,
     XLMRobertaConfig,
-    exBertConfig,
+#     exBertConfig,
 
     BertTokenizer,
     ElectraTokenizer,
     XLMRobertaTokenizer,
-    exBertTokenizer,
+#     exBertTokenizer,
 
     BertForSequenceClassification,
     DistilBertForSequenceClassification,
     ElectraForSequenceClassification,
     XLMRobertaForSequenceClassification,
-    exBertForSequenceClassification,
+#     exBertForSequenceClassification,
 
     BertForTokenClassification,
     DistilBertForTokenClassification,
     ElectraForTokenClassification,
     XLMRobertaForTokenClassification,
-    exBertForTokenClassification,
+#     exBertForTokenClassification,
 
     BertForQuestionAnswering,
     DistilBertForQuestionAnswering,
     ElectraForQuestionAnswering,
     XLMRobertaForQuestionAnswering,
-    exBertForQuestionAnswering,
+#     exBertForQuestionAnswering,
 )
 
 CONFIG_CLASSES = {
@@ -54,7 +54,7 @@ CONFIG_CLASSES = {
     "xlm-roberta": XLMRobertaConfig,
     'kcbert': BertConfig,
     "kcelectra-base-v1": ElectraConfig,
-    "exbert": exBertConfig,
+#     "exbert": exBertConfig,
 }
 
 TOKENIZER_CLASSES = {
@@ -68,7 +68,7 @@ TOKENIZER_CLASSES = {
     "xlm-roberta": XLMRobertaTokenizer,
     'kcbert': BertTokenizer,
     "kcelectra-base-v1": ElectraTokenizer,
-    "exbert": exBertTokenizer,
+#     "exbert": exBertTokenizer,
 }
 
 MODEL_FOR_SEQUENCE_CLASSIFICATION = {
@@ -82,7 +82,7 @@ MODEL_FOR_SEQUENCE_CLASSIFICATION = {
     "xlm-roberta": XLMRobertaForSequenceClassification,
     'kcbert': BertForSequenceClassification,
     "kcelectra-base-v1": ElectraForSequenceClassification,
-    "exbert": exBertForSequenceClassification,
+#     "exbert": exBertForSequenceClassification,
 }
 
 MODEL_FOR_TOKEN_CLASSIFICATION = {
@@ -96,7 +96,7 @@ MODEL_FOR_TOKEN_CLASSIFICATION = {
     "xlm-roberta": XLMRobertaForTokenClassification,
     'kcbert': BertForTokenClassification,
     "kcelectra-base-v1": ElectraForTokenClassification,
-    'exbert': exBertForTokenClassification,
+#     'exbert': exBertForTokenClassification,
 }
 
 MODEL_FOR_QUESTION_ANSWERING = {
@@ -110,7 +110,7 @@ MODEL_FOR_QUESTION_ANSWERING = {
     "xlm-roberta": XLMRobertaForQuestionAnswering,
     'kcbert': BertForQuestionAnswering,
     "kcelectra-base-v1": ElectraForQuestionAnswering,
-    'exbert': exBertForQuestionAnswering,
+#     'exbert': exBertForQuestionAnswering,
 }
 
 
