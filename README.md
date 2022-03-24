@@ -68,6 +68,23 @@ $ python3 run_ner.py --task naver-ner --config_file kcelectra-base-v1.json
 $ python3 run_squad.py --task korquad --config_file kcelectra-base-v1.json
 ```
 
+### KcELECTRA-v2022-dev
+
+#### Base Command
+
+```bash
+export CUDA_VISIBLE_DEVICES=1
+python3 run_seq_cls.py --task nsmc --config_file kcelectra-v2022-dev.json
+python3 run_seq_cls.py --task kornli --config_file kcelectra-v2022-dev.json
+python3 run_seq_cls.py --task paws --config_file kcelectra-v2022-dev.json
+python3 run_seq_cls.py --task question-pair --config_file kcelectra-v2022-dev.json
+python3 run_seq_cls.py --task korsts --config_file kcelectra-v2022-dev.json
+python3 run_ner.py --task naver-ner --config_file kcelectra-v2022-dev.json
+python3 run_squad.py --task korquad --config_file kcelectra-v2022-dev.json
+```
+
+
+
 ### exKcBERT-paws
 
 #### Command
