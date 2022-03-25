@@ -11,7 +11,7 @@
 - pip reqs
 
 ```python
-torch<=1.10
+torch<=1.11
 transformers<5
 seqeval
 fastprogress
