@@ -327,7 +327,7 @@ def evaluate(args, model, tokenizer, prefix="", global_step=None):
 
             example_indices = batch[3]
 
-            outputs = model(**inputs)  # [0]
+            outputs = model(**inputs, return_dict=False)  # [0]
 
         for i, example_index in enumerate(example_indices):
             eval_feature = features[example_index.item()]
